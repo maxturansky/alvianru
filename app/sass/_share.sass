@@ -1,0 +1,39 @@
+.share
+	margin:
+		top: 2rem
+
+	&__title
+		margin:
+			bottom: .25rem
+		display: block
+		font-weight: bold
+		font-family: $FONT-HEADING
+		font-size: $FONT-SIZE - 1px
+
+	ul
+		@include ul0()
+		display: flex
+
+	li
+		margin:
+			right: .5rem
+		min-width: 60px
+		display: block
+		border-radius: 2px
+
+	&--vk
+		background-color: $VK
+
+	&--facebook
+		background-color: $FACEBOOK
+
+	&--twitter
+		background-color: $TWITTER
+
+	&--googleplus
+		background-color: $GOOGLEPLUS
+
+	img
+		width: 37px
+		display: block
+		border-radius: 2px

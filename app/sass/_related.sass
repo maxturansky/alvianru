@@ -1,0 +1,51 @@
+.related
+
+	&-inside
+
+		margin:
+			top: 2rem
+			bottom: 2rem
+
+		ul
+			@include ul(transparentize($BLACK,.75))
+		
+			li
+				margin:
+					bottom: .75rem
+
+		&__text
+			font-weight: bold
+			font-size: $FONT-SIZE - 1px
+			font-family: $FONT-HEADING
+			margin-bottom: 1rem
+			display: block
+
+		&__article
+			display: flex
+
+		&__link
+			font-weight: bold
+			font-size: $FONT-SIZE - 1px
+			font-family: $FONT-HEADING
+			color: $GREEN
+			border-bottom: 1px solid transparentize($GREEN,.75)
+			text-decoration: none
+
+			&:hover
+				border: 0
+				border-bottom: 1px solid transparentize($BLUE,.75)
+				color: $BLUE
+
+		&__picture
+			margin:
+				right: 1.25rem
+
+		&__picture img
+			display: block
+			width: 100%
+			max-width: 150px
+			height: auto
+
+		&__title
+			
+

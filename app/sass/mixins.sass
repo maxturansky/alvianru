@@ -1,0 +1,48 @@
+@mixin ul0()
+	margin: 0
+	padding: 0
+	list-style: none
+
+@mixin ul($color)
+	margin: 0
+	padding: 0
+	list-style: none
+	position: relative
+
+	li
+		margin: 0
+		margin:
+			bottom: .75rem
+		padding: 0
+		padding:
+			left: 40px
+		list-style: none
+		position: relative
+
+		&::after
+			width: 9px
+			height: 9px
+			border-radius: 50%
+			background-color: $color
+			left: 20px
+			background-image: none
+			top: 9px
+			content: ''
+			display: block
+			position: absolute
+
+@mixin sans-serif()
+	font-weight: bold
+	font-family: $FONT-HEADING
+
+@mixin a($color1,$color2)
+	transition: all .2s
+	color: $color1
+	font-family: $FONT-HEADING
+	font-size: $FONT-SIZE - 1px
+	text-decoration: none
+	border-bottom: 1px solid transparentize($color1, .75)
+		
+	&:hover
+		color: $color2
+		border-bottom: 1px solid transparentize($color2, .75)

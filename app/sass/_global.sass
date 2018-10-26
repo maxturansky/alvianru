@@ -1,0 +1,66 @@
+html,
+body
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+*,
+*::before,
+*::after
+  box-sizing: inherit
+
+body
+  background-color: $GRAY-BACKGROUND
+
+.btn,
+.btn:visited
+  display: inline-block
+  background-color: $GREEN
+  color: $WHITE
+  text-transform: uppercase
+  font-weight: bold;
+  font-family: $FONT-HEADING
+  text-decoration: none
+  min-height: 31px
+  line-height: 31px
+  font-size: $FONT-SIZE - 4px
+  padding: 0 1.5rem
+  transition: all 0.2s
+  border-radius: 2px
+  border: 3px solid $GREEN
+  letter-spacing: .25px
+
+.btn:hover
+  background-color: $BLUE
+  border: 3px solid $BLUE
+  cursor: pointer
+
+.btn
+
+  &--transparent
+    background-color: transparent
+    color: $BLACK
+    border: 3px solid $GREEN
+
+    &:hover
+      background-color: $GREEN
+      color: $WHITE
+      border: 3px solid $GREEN
+
+.visually-hidden
+  display: none !important
+  opacity: 0 !important
+  position: absolute !important
+
+input,
+textarea
+  font-size: $FONT-SIZE - 4px
+  padding: 7px
+  display: inline-block
+  font-family: $FONT-HEADING
+  border: 1px solid transparentize($BLACK,.75)
+  border-radius: 2px
+
+  &:focus
+    outline: 1px solid $GREEN
+    border: 1px solid $GREEN

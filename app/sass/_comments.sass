@@ -1,0 +1,111 @@
+.the_champ_error
+    display: none
+
+.the_champ_outer_login_container
+    display: none
+
+.comment-notes
+    display: none
+
+.comment-form
+    width: 100%
+    max-width: 350px
+    display: flex
+    flex-direction: column
+
+    &-comment label
+        display: none
+
+    &-author
+    &-email
+        order: -2
+        display: flex
+        flex-direction: row
+        align-items: center
+
+    &-author input,
+    &-email input
+        max-width: 260px
+
+    &-email-note
+        font-size: 15px
+
+.comments
+
+    &__title
+        margin:
+            top: 0
+            bottom: 1.25rem
+
+    &__list
+        list-style: none
+        margin: 0
+        padding: 0
+
+    &__item
+        list-style: none
+        margin: 0
+        margin-bottom: 1.25rem
+        padding: 0
+
+        &:last-of-type
+            margin-bottom: 0
+
+    &__wrap
+        display: flex
+        flex-direction: row
+
+    &__item .children
+        width: 100%
+
+    &__item .children .comments__item
+        margin-top: 1.25rem
+        margin-bottom: 1.25rem
+
+    &__item .children .comments__item:last-of-type
+        margin-bottom: 0
+
+    &__avatar
+        display: none
+        flex-shrink: 0
+
+        @media only screen and (min-width:577px)
+            display: block
+            margin-right: 15px
+
+        img
+            display: block
+            border-radius: 2px
+
+            @media only screen and (min-width:769px)
+                width: 80px
+                height: 80px
+
+.comments
+    &__name
+        display: block
+        margin: 0
+        padding: 0
+        margin-bottom: 10px
+        font-family: $FONT-HEADING
+        font-size: 15px
+
+    &__text
+        display: block
+        margin: 0
+        padding: 0
+        margin-bottom: 10px
+
+    &__meta
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+
+    &__time
+        margin: 0
+        padding: 0
+        margin-bottom: 10px
+        margin-right: 1rem
+
+    &__reply a
+        @include a($GREEN,$BLUE)
